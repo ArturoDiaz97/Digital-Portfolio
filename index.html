@@ -38,12 +38,17 @@
 
 <body class="is-preload">
 
+	<!-- bg with animation -->
+	<div class="bg" id="bg-transitional"></div>
+	<div class="bg bg2"></div>
+	<div class="bg bg3"></div>
+
 	<!-- Wrapper-->
 	<div id="wrapper">
 
 		<!-- Nav  -->
 		<nav id="nav">
-			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#home" class="icon solid fa-home"><span>Home</span></a>
 			<a href="#work" class="icon solid fa-briefcase"><span>Works</span></a>
 			<a href="#challenges" class="icon solid fa-lightbulb"><span>Challenges</span></a>
 			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
@@ -59,7 +64,7 @@
 					<p>Software Developer</p>
 				</header>
 				<a href="#work" class="jumplink pic">
-					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+					<span id="arrow-button" class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 					<img src="images/foto_perfil.jpg" alt="Arturo Diaz" />
 				</a>
 			</article>
@@ -125,7 +130,7 @@
 								<textarea name="message" placeholder="Message" rows="6" style="resize: none;"></textarea>
 							</div>
 							<div class="col-12">
-								<input type="submit" value="Send Message" />
+								<input style="width: 100%;" type="submit" value="Send Message" />
 							</div>
 						</div>
 					</div>
@@ -137,7 +142,7 @@
 		<!-- Footer -->
 		<div id="footer">
 			<ul class="copyright">
-				<li>&copy; 2021 Arturo Diaz. Todos los derechos reservados.</li>
+				<li>&copy; 2021 All rights reserved.</li>
 				<li>Design: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</div>

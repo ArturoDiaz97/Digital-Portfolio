@@ -13,6 +13,26 @@
 		$panels = $main.children('.panel'),
 		$nav = $('#nav'), $nav_links = $nav.children('a');
 
+	// Background transition when section changes or arrow-button is pressed
+
+	let bg = document.getElementById("bg-transitional");
+	let arrowButton = document.getElementById("arrow-button");
+	let menuItems = document.querySelectorAll("#nav a");
+
+	arrowButton.addEventListener("click", () => {
+		bg.classList.add("animated")
+	})
+
+	menuItems.forEach(item => {
+		item.addEventListener("click", () => {
+			bg.classList.add("animated")
+		})
+	})
+
+	bg.addEventListener("animationend", () => {
+		bg.classList.remove("animated")
+	}, false);
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:  [ '1281px',  '1680px' ],
